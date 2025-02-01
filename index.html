@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container"></div>
+    <div class="content">
+        <div class="navbar"><a href="index.html">Etch-a-<span class="sketch">Sketch</span></a></div>
+        <div class="buttons">
+            <button class="grid-size">grid size</button> 
+            <button class="mode">mode</button> 
+            <div class="right">
+                <button class="color"> <input type="color" class="colorpicker" value="#7b5b4a">color</button> 
+                <div class="note-container">
+                    <svg width="60" height="20">
+                        <path id="curve" d="M0,15 C20,15 80,15 115,40"></path>
+                        <text class="text">
+                            <textPath class="text-path" href="#curve">* press for a surprise</textPath>
+                        </text>
+                    </svg>
+                </div>
+                  
+            </div>
+        </div>
+        <div class="container"></div>
+        <div class="clear"><button class="clearbutton">clear</button></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

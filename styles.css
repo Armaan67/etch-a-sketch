@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    background-color: #faf3e0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.navbar {
+    font-family: "Poiret One", serif;
+    font-size: 28px;
+    display: flex;
+    width: 100%;
+    flex: 1 1 0;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #7b5b4a;
+    padding: 20px;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+    width: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    background-color: #faf3e0;
+    font-family: "Poiret One", serif;
+    border: 2px solid #a1887f;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 1px 20px;
+    color: #7b5b4a;
+
+
+}
+
+.clear {
+    display: flex;
+    width: 75vh;
+    justify-content: flex-end;
+}
+
+.clear .clearbutton {
+    background-color: #faf3e0;
+    font-family: "Poiret One", serif;
+    border: 2px solid #a1887f;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #7b5b4a;
+
+}
+
+.color .colorpicker {
+    margin-right: 5px;
+    padding: 0;
+    border: 0;
+    height: 25px;
+    width: 30px;
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+}
+
+.note-container {
+    font-size: smaller;
+}
+  
+.note-container svg{
+    overflow: visible;
+}
+#curve {
+    fill: transparent;
+}
+
+
+svg .text-path {
+    fill: #7b5b4a;
+    stroke-width: 0.5;
+}
+
+.sketch {
+    background: radial-gradient(circle, dodgerblue, #7b5b4a);
+    color: transparent;
+    background-clip: text;
+    animation: sketch 10s linear infinite;
+    background-size: 200% 200%;
+    font-weight: 900;
+}
+
+@keyframes sketch {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+
+    
+}
